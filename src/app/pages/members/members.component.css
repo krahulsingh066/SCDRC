@@ -1,0 +1,29 @@
+.userDetails {
+    background-color: rgb(6, 12, 67);
+    color: white;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+  .modalButton {
+    text-align: end;
+    justify-content: end;
+  }
+  .modalButton button {
+    
+    background-color: #4C7B8B;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .modalButton button:hover {
+    background-color: #305764;
+  
+  }

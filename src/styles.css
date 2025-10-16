@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgb(109, 108, 108); 
+    border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #23486A; 
+    border-radius: 10px;
+    border: #142c42 2PX solid;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #142c42; 
+    }
+
+
+    .fs-3{
+      color: #23486A;
+    }
+    .fs-4{
+      color: #327099;
+    }
+    /* @media only screen and (max-width: 600px) {
+      body {
+        padding: 0 10px;
+      }
+    } */

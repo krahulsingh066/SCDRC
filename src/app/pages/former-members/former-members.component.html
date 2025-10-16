@@ -1,0 +1,84 @@
+<div class="container">
+    <div>
+        <p class="fw-bold fs-3 my-5 text-center" > Former Chairperson & Members</p>
+    </div>
+</div>
+
+
+<main class="container my-4">
+  <p class="text-center fw-bold fs-2">FORMER PRESIDENTS</p>
+    <div class="row">
+        @for (user of userData; track user.id) {
+            <div class="col-lg-3 mb-3 col-md-4 col-sm-6" style="min-height: 100%;"> 
+                <div class="card" style="max-width: 240px; max-height: 360px;">
+                    <img [src]="user.imgLink" class="card-img-top cursor" style="width: 100%; min-height: 100%;" (click)="openModal(viewUserTemplate, user.id)" alt="...">
+                    <div class="p-1 text-center">
+                      <p class="fs-5 fw-bold ">{{ user.firstName }}</p>
+                      <p class="card-text">{{ user.duration }}</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+            </div>
+           
+            }
+           
+     
+       
+        
+    </div>
+</main>
+<main class="container my-4">
+  <p class="text-center fw-bold fs-2">FORMER MEMBERS</p>
+  <div class="table-responsive container my-5 border rounded">
+    <table class="table align-middle">
+        <thead>
+          <tr>
+            <th scope="col">S.NO.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Duration</th>
+            
+
+        </tr></thead>
+          <tbody>
+        @for (member of members; track member.siNo) {
+            <tr>
+                <td scope="col">{{ member.siNo }}</td>
+                <td scope="col" class="fw-bold">{{ member.name }}</td>
+                <td scope="col">{{ member.period }}</td>
+                
+            </tr>
+          }
+          </tbody>
+        </table>
+           
+     
+       
+        
+    </div>
+</main>
+  <!-- modal section -->
+  <ng-template  #viewUserTemplate  >
+    <div style="min-width: 100%;" >
+        <div class="p-4 text-dark" >
+            @if (user) {
+                <div class="row" >
+                    <div class="col-md-4 align-self-center">
+                        <img [src]="user.imgLink" class="card-img-top cursor" style="width: 100%;"  alt="...">
+                        <br>
+                        <p class="text-center fw-bold"> {{ user.firstName }}</p>
+                    </div>
+                    <div class="col-md-8"><p>{{ user.description }}</p></div>
+                </div>
+            
+            
+            
+            
+            }@else{
+            <p>User does not exist</p>
+            }
+          </div>
+          <div class="modalButton m-3">
+            <button (click)="exitModal()">close</button>
+          </div>
+    </div>
+  </ng-template>

@@ -1,0 +1,103 @@
+<div class="container flex justify-content-between">
+  <div class="d-flex justify-content-between">
+
+
+    <div class="d-flex p-2">
+      <div class="pt-2">
+        <img src="../../../assets/Images/emblem-dark-logo_8.png" alt="Logo 1" style="height: 100px;" class="logo " />
+      </div>
+
+      <div class="pt-3">
+        <p class="font-monospace m-1 fw-bold toptext ">दिल्ली राज्य उपभोक्ता विवाद निवारण आयोग</p>
+        <h3 class="toptext">Delhi State Consumer Disputes Redressal Commission </h3>
+      </div>
+    </div>
+    <div  class="d-flex justify-content-end px-2 py-4">
+      <span id="menu-icon" class="fs-1">
+        <i 
+          class="bi rounded border-3 fw-bold" 
+          [ngClass]="showSideNav ? 'bi-x-lg' : 'bi-list'" 
+          (click)="toggleSidenav()" 
+          style="cursor: pointer; width: 40px; height: 40px;  display: flex; align-items: center; justify-content: center; font-size: 40px;">
+        </i>
+      </span>
+    </div>
+    <div class="logo-container d-none d-lg-block">
+      <img src="../../../assets/Images/jago-grahak-logo (1).png" alt="Logo 1" class="logo mt-3" />
+      <img src="../../../assets/Images/amrit-mahotsav.jpg" alt="Logo 1" class="logo mt-3" />
+      <!-- <img src="../../../assets/images/delhi-sarkar.png" alt="Logo 2" class="logo"/> -->
+      <!-- <img src="../../../assets/Images/india-flag-1.jpg" alt="Logo 3" class="logo mt-3 " /> -->
+    </div>
+
+  </div>
+  
+</div>
+
+<div style="background-color: #e7e5ca;">
+  <ul class="navbar1 mx-auto container" id="nav-tab" role="tablist">
+    <li *ngFor="let item of menuItems" class="nav-item1 " [ngClass]="{ 'dropdown1 ': item.dropdown }">
+      <a (click)="navigateToExternalLink(item.link, item.target)" class="dropbtn1" 
+        [ngClass]="{ ' dropdown-toggle': item.dropdown }">{{ item.name }} </a>
+      <div *ngIf="item.dropdown" class="dropdown-content1 ">
+        <a *ngFor="let subItem of item.dropdown" (click)="navigateToExternalLink(subItem.link, subItem.target)">
+          {{ subItem.name }}
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="sidenav" *ngIf="showSideNav">
+  <!-- <div class=" text-end p-2" style="width: 100%;" > xyz</div> -->
+  <ng-container  *ngFor="let menuItem of menuItems">
+    <a *ngIf="!menuItem.dropdown"  [href]="menuItem.link" >{{ menuItem.name }}</a>
+    <button *ngIf="menuItem.dropdown" class="dropdown-btn" (click)="toggleDropdown($event)" [ngClass]="{ ' dropdown-toggle': menuItem.dropdown }">
+      {{ menuItem.name }}
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div *ngIf="menuItem.dropdown" class="dropdown-container">
+      <a *ngFor="let dropdownItem of menuItem.dropdown" [href]="dropdownItem.link"  >
+        {{ dropdownItem.name }}
+      </a>
+    </div>
+  </ng-container>
+</div>
+
+
+
+
+<!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Link with href
+</a>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar1  w-100">
+      <li *ngFor="let item of menuItems" class="nav-item1" style="width: 100%;"[ngClass]="{ 'dropdown1 ': item.dropdown }">
+        <a (click)="navigateToExternalLink(item.link, item.target)" style="width: 100%;" class="dropbtn1" [ngClass]="{ ' dropdown-toggle': item.dropdown }">{{ item.name }} </a>
+        <div *ngIf="item.dropdown" style="width: 90%;" class="dropdown-content1 ">
+          <a *ngFor="let subItem of item.dropdown" style="width: 100%;"
+             (click)="navigateToExternalLink(subItem.link, subItem.target)">
+             {{ subItem.name }}
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<div style="overflow: hidden; max-height: 300px;">
+
+  <img src="../../../assets/photo/vecteezy_law-and-religion-.jpg" class="img-fluid" style=" width: 100%;"
+    alt="Responsive image">
+</div>
+
+
+
+
+
+<!-- <a *ngFor="let subItem of item.dropdown" [href]="subItem.link"  [attr.target]="subItem.target==='_blank' ? subItem.target : '_self'">{{ subItem.name }}</a> -->

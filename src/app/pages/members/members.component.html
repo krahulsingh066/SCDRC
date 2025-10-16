@@ -1,0 +1,94 @@
+<div class="container">
+    <div>
+        <p class="fw-bold fs-3 my-5 text-center" > Sitting Chairperson & Members</p>
+    </div>
+    <div>
+        <div class="" style="">
+            <div class="text-center">
+                <img src="../../../assets/photo/sangita.jpg" class="img-fluid rounded-circle" style="max-height: 400px;" alt="...">
+                <br>
+               <p class="fs-5 fw-bold my-3"> Dr. Justice Sangita Dhingra Sehgal
+                <br>
+Hon'ble President</p>
+            </div>
+            <div >
+                <div class="brief text-justify" style="text-align: justify;
+  text-justify: inter-word;">
+                    Born on 20th June, 1958 at Chandigarh, (India), Justice Sangita Dhingra Sehgal did her schooling and graduation from Chandigarh in the year 1978, obtained Law Degree (LL.B.) from Delhi University in the year 1981, did M. A. Public Administration from Panjab University in the year 1983,  (L.L.M.) in the year 2004 and did her Ph.D. degree from Amity University, Noida in the year 2012.<br>
+Topper of her batch of 1984 Delhi Judicial Services (DJS), she joined Delhi Judicial Service (DJS) on 26.07.1985.  She served as Sub-Judge (From 1985 to 1987), Metropolitan Magistrate and also Secretary of Legal Aid and Advise Committee (From 1987 to 1995), Competent Authority, Slums, Municipal Corporation of Delhi and Joint Director/Mobilisation Committee Development (From 1995 to 1997) and was promoted as Addl. Chief Metropolitan Magistrate in the year 1997 and exclusively dealt with Customs and FERA Act cases including the "Jain Hawala Case", "Match Fixing Case".  She worked as Additional Sessions Judge in the year 2000 and dealt with "Lajpat Nagar Bomb Blast" case under Explosive Substances Act.  She worked as Additional Sessions Judge-cum-Chief Metropolitan Magistrate  (From 2000 to 2003) and being the only Chief Metropolitan Magistrate in the whole of Delhi, she looked after the entire administrative work pertaining to all Magistrates of Tis Hazari, Patiala House and Karkardooma courts and supervised functions of the entire Magistracy due to bifurcation of Delhi into five zones.  During this tenure till 23rd June 2003, she was vested with the exclusive powers to deal with cases of Official Secrets Act.  For the first time, Special Courts were organized in Tihar Jail and cases of undertrials languishing in Tihar Jail for long and involved in petty offences were dealt with.  She worked as Secretary, Press Council of India (From 2003 to 2004) which is a statutory post established by Parliament under the Press Council Act, 1978.  Thereafter, she worked as Member Secretary, Delhi Legal Services Authority (From 2004 to 2008) and on 08.03.2006, for the first time, Delhi Legal Services Authority launched Mobile Legal Services, on 10.03.2006, Summer and Winter Internship Programme for Law Interns of various Law Universities were started and also opened a 24 Hours Permanent Legal Services Clinic.  She was posted as Additional District Judge (From 2008 to 2010) and Special Judge (Prevention of Corruption Act) (From 2010 to 2013) and dealt with “Cash for Vote Scam” case and a case against accused Dr. Ravi Inder Singh, IAS, Director, Internal Security, Ministry of Home Affairs, Govt. of India.  She worked as District &amp; Sessions Judge in the year 2013 and dealt with different cases of Public Premises Act, Essential Services Maintenance Act, Essential Commodities Act and RCT besides doing various administrative duties pertaining to Saket District.  She remained Registrar General, High Court of Delhi from April, 2013 to December, 2014 and also worked as Registrar (Vigilance).<br>
+She was elevated to the Bench of High Court of Delhi as "Additional Judge" on 15th December, 2014 and became a Permanent Judge on 2nd June, 2016.<br>
+Being a Trained Mediator, number of lawyers at Raipur, Chandigarh, Udhampur, Ranchi, Bhubaneshwar and Aurangabad as well as number of judicial officers in Sikkim Judicial Academy and West Bengal Judicial Academy were trained by her.<br>
+She was a member of the Project Steering Committee (PSC) implemented by the Department of Justice, Ministry of Law &amp; Justice, Government of India with support from United Nation Development Programme (UNDP) which aimed to strengthen access to justice particularly for women, scheduled castes, scheduled tribes and minorities.  <br>
+She is a Member of Juvenile Justice Board and was nominated and attended a programme titled `Regional Consultation on Strengthening Restoration and Rehabilitation of Children under the Juvenile Justice (Care and Protection of Children).<br>
+She is a Presiding Officer of The Unlawful Activities (Prevention) Act, 1967 (Islamic Research Foundation).<br>
+She was nominated and attended the “21st Annual Intensive Study Programme for Judicial Educators”  held at Halifax, Canada; she also attended a "Comprehensive Mediation Training Programme titled “Mastering the Fundamentals of Mediation” held in the University of California, Hastings College of the Law, U.S.A. and was also nominated to attend the “Regional Preparatory Workshop for Launch of a Global Judicial Integrity Network” held at Bangkok, Thailand.<br>
+<br>
+<p class="fs-5 fw-bold"> She has authored the following books :</p> 
+<ul>
+    <li>
+        “An Exhaustive Guide to the Slum Area (Improvement &amp;   Clearance) Act, 1956" and relevant Rules published in the year 1998 which was foreword by Hon’ble Justice R. C. Lahoti, Chief Justice, Delhi High Court. The second edition of the same was published in the year 2009 which was foreword by Hon’ble Mr. Justice T. S. Thakur, Chief Justice of Punjab &amp; Haryana High Court.
+    </li>
+    <li>
+        “Commentary on–The Legal Services Authorities Act” which was published in the year 2012 which was foreword by Hon’ble Mr. Justice T. S. Thakur, Judge, Supreme Court of India followed by its Hindi translation “Vidhik Sewa Pradhikaran Adhiniyam, 1987” published in the year 2016.
+    </li>
+    <li>
+        `Woman Know Thyself’ containing different laws relating to Women in India which was published in 2016 and released by Hon’ble Mr. Justice T.S. Thakur, Chief Justice, Supreme Court of India. Resigned on 30.05.2020.
+    </li>
+</ul>
+     </div>
+            </div>
+            <!-- <img src="../../../assets/members/bimla.jpeg" alt="">
+            <img src="../../../assets/members/jpimage.jpg" alt="">
+            <img src="../../../assets/members/pinki.JPG" alt=""> -->
+        </div>
+        <main class="container my-4">
+            <p class="text-center fw-bold fs-2 my-5">Members</p>
+              <div class="row">
+                  @for (user of userData; track user.id) {
+                      <div class="col-lg-3 mb-3 col-md-4 col-sm-6" style="min-height: 100%;"> 
+                          <div class="card" style="max-width: 240px; max-height: 360px;">
+                              <img [src]="user.imgLink" class="card-img-top cursor" style="width: 100%; min-height: 100%;" (click)="openModal(viewUserTemplate, user.id)" alt="...">
+                              <div class="p-1 text-center">
+                                <p class="fs-5 fw-bold ">{{ user.firstName }}</p>
+                                <!-- <p class="card-text">{{ user.duration }}</p> -->
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                              </div>
+                            </div>
+                      </div>
+                     
+                      }
+                     
+               
+                 
+                  
+              </div>
+          </main>
+
+    </div>
+</div>
+
+<ng-template  #viewUserTemplate  >
+    <div style="min-width: 100%;" >
+        <div class="p-4 text-dark" >
+            @if (user) {
+                <div class="row" >
+                    <div class="col-md-4 align-self-center">
+                        <img [src]="user.imgLink" class="card-img-top cursor" style="width: 100%;"  alt="...">
+                        <br>
+                        <p class="text-center fw-bold"> {{ user.firstName }}</p>
+                    </div>
+                    <div class="col-md-8"><p>{{ user.description }}</p></div>
+                </div>
+            
+            
+            
+            
+            }@else{
+            <p>User does not exist</p>
+            }
+          </div>
+          <div class="modalButton m-3">
+            <button (click)="exitModal()">close</button>
+          </div>
+    </div>
+  </ng-template>

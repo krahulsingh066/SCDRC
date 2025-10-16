@@ -1,0 +1,146 @@
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #23486A">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-between p-4" style="background-color: #4C7B8B">
+    <!-- Left -->
+    <!-- <div class="me-5">
+      <span>Get connected with us on social networks:</span>
+    </div> -->
+    <!-- Left -->
+
+    <!-- Right -->
+    <!-- <div>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="text-white me-4">
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Important</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p>
+            <a class="text-white" routerLink= "/daily-order">Daily Orders</a>
+            <!-- { name: 'Daily Orders', link: '/daily-order' ,target:'0'  }, -->
+          </p>
+          <p>
+            <a href="https://e-jagriti.gov.in/judgement" target="_blank" class="text-white">Judgement</a>
+          </p>
+          <p>
+            <a href="https://e-jagriti.gov.in/cause-list" target="_blank" class="text-white">Cause-List</a>
+          </p>
+          <p>
+            <a href="https://e-jagriti.gov.in/case-history-case-status" target="_blank" class="text-white">Case
+              History</a>
+          </p>
+          <!-- <p>
+                <a href="#!" class="text-white">Bootstrap Angular</a>
+              </p> -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p *ngFor="let link of links">
+            <a [href]='link.link' class="text-white" target="_blank">{{link.name}}</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold">Address</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p class="fs-5"><i class="bi bi-geo-alt-fill"></i>&nbsp;
+            Vikas Bhawan, A Block, Azad Bhawan Rd, IP Estate, New Delhi, Delhi, 110002
+          </p>
+          <p class="fs-5"><i class="bi bi-telephone-fill"></i>
+            &nbsp; +91-11-23370799
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Location</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <div class="rounded " style="max-width: 60px;">
+            <div class="mapouter">
+              <div class="gmap_canvas" style="border-radius: 20px;"><iframe class="gmap_iframe" frameborder="0"
+                  scrolling="no" marginheight="0" marginwidth="0"
+                  src="https://maps.google.com/maps?width=350&amp;height=200&amp;hl=en&amp;q=delhi state commission&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                  <!-- <a href="https://sprunkin.com/">Sprunki</a> -->
+                </div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 350px;
+                  height: 200px;
+                }
+
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 350px;
+                  height: 200px;
+                }
+
+                .gmap_iframe {
+                  width: 350px !important;
+                  height: 200px !important;
+                }
+              </style>
+            </div>
+          </div>
+
+          <!-- <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+              <p><i class="fas fa-envelope mr-3"></i> info.nic.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p> -->
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    Copyright © 2025 - All Right Reserved - Official Website of Government of National Capital Territory of Delhi,
+    India.
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
